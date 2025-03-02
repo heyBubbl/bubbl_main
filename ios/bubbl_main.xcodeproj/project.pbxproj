@@ -7,10 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041EFCD87DAE487187357F11 /* Fredoka-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDA2445EB29F497A885D084C /* Fredoka-Light.ttf */; };
 		0C80B921A6F3F58F76C31292 /* libPods-bubbl_main.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-bubbl_main.a */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		19BF0EE6AD284B0C8638BF27 /* Modak.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1F5965B6E38D4BC3B9407373 /* Modak.ttf */; };
+		26E395A8FF774AAC9BA696F9 /* Fredoka-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8DB99A3DE52549DBA4EBAD09 /* Fredoka-Regular.ttf */; };
+		344DAAB9D4DF4F9B8D84372C /* Fredoka-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAF5527C898D44E4ADBCFCDF /* Fredoka-SemiBold.ttf */; };
+		4F7FFF33AAC440C4A286C464 /* Fredoka-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 871F123BAB8B457BA6AFBDE5 /* Fredoka-Bold.ttf */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		A4B081B6D88743F8998F0D03 /* Fredoka-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F67ED3DD3AC43D8B3DE7044 /* Fredoka-Medium.ttf */; };
 		CE343D7C810CED4ED3047CE5 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
 /* End PBXBuildFile section */
 
@@ -19,11 +25,17 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = bubbl_main/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = bubbl_main/Info.plist; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = bubbl_main/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		1F5965B6E38D4BC3B9407373 /* Modak.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Modak.ttf; path = ../assets/fonts/Modak.ttf; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-bubbl_main.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bubbl_main.debug.xcconfig"; path = "Target Support Files/Pods-bubbl_main/Pods-bubbl_main.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-bubbl_main.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bubbl_main.release.xcconfig"; path = "Target Support Files/Pods-bubbl_main/Pods-bubbl_main.release.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-bubbl_main.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-bubbl_main.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F67ED3DD3AC43D8B3DE7044 /* Fredoka-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Fredoka-Medium.ttf"; path = "../assets/fonts/Fredoka-Medium.ttf"; sourceTree = "<group>"; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = bubbl_main/AppDelegate.swift; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = bubbl_main/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		871F123BAB8B457BA6AFBDE5 /* Fredoka-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Fredoka-Bold.ttf"; path = "../assets/fonts/Fredoka-Bold.ttf"; sourceTree = "<group>"; };
+		8DB99A3DE52549DBA4EBAD09 /* Fredoka-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Fredoka-Regular.ttf"; path = "../assets/fonts/Fredoka-Regular.ttf"; sourceTree = "<group>"; };
+		AAF5527C898D44E4ADBCFCDF /* Fredoka-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Fredoka-SemiBold.ttf"; path = "../assets/fonts/Fredoka-SemiBold.ttf"; sourceTree = "<group>"; };
+		DDA2445EB29F497A885D084C /* Fredoka-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Fredoka-Light.ttf"; path = "../assets/fonts/Fredoka-Light.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -60,6 +72,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		60C1D51EEA14452D8B3484C5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				871F123BAB8B457BA6AFBDE5 /* Fredoka-Bold.ttf */,
+				DDA2445EB29F497A885D084C /* Fredoka-Light.ttf */,
+				6F67ED3DD3AC43D8B3DE7044 /* Fredoka-Medium.ttf */,
+				8DB99A3DE52549DBA4EBAD09 /* Fredoka-Regular.ttf */,
+				AAF5527C898D44E4ADBCFCDF /* Fredoka-SemiBold.ttf */,
+				1F5965B6E38D4BC3B9407373 /* Modak.ttf */,
+			);
+			name = Resources;
+			path = "";
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +101,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				60C1D51EEA14452D8B3484C5 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -161,6 +188,12 @@
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				CE343D7C810CED4ED3047CE5 /* PrivacyInfo.xcprivacy in Resources */,
+				4F7FFF33AAC440C4A286C464 /* Fredoka-Bold.ttf in Resources */,
+				041EFCD87DAE487187357F11 /* Fredoka-Light.ttf in Resources */,
+				A4B081B6D88743F8998F0D03 /* Fredoka-Medium.ttf in Resources */,
+				26E395A8FF774AAC9BA696F9 /* Fredoka-Regular.ttf in Resources */,
+				344DAAB9D4DF4F9B8D84372C /* Fredoka-SemiBold.ttf in Resources */,
+				19BF0EE6AD284B0C8638BF27 /* Modak.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
