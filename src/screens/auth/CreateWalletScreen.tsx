@@ -1,5 +1,5 @@
 // src/screens/auth/CreateWalletScreen.js
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import {
   View,
   Text,
@@ -8,11 +8,18 @@ import {
   StatusBar,
   Image,
   Animated,
+  Alert,
+  Platform,
 } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
+import { request, PERMISSIONS, RESULTS } from 'react-native-permissions';
+
 const CreateWalletScreen = () => {
   // Animation speed control - increase this value to make it slower
   const ANIMATION_DURATION = 5000; // 5 seconds per color transition
+  
+  // State to track microphone permission
+  const [micPermission, setMicPermission] = useState(null);
   
   // Animation values for each gradient
   const fadeAnim1 = useRef(new Animated.Value(1)).current;
@@ -94,9 +101,51 @@ const CreateWalletScreen = () => {
     };
   }, [fadeAnim1, fadeAnim2, fadeAnim3]);
 
+  const requestMicrophonePermission = async () => {
+    try {
+      const permissionToRequest = Platform.OS === 'ios' 
+        ? PERMISSIONS.IOS.MICROPHONE 
+        : PERMISSIONS.ANDROID.RECORD_AUDIO;
+      
+      const result = await request(permissionToRequest);
+      
+      setMicPermission(result);
+      
+      switch (result) {
+        case RESULTS.GRANTED:
+          console.log('Microphone permission granted');
+          // Proceed with wallet creation after permission granted
+          handleCreateWallet();
+          break;
+        case RESULTS.DENIED:
+          console.log('Microphone permission denied');
+          Alert.alert(
+            'Permission Required', 
+            'Microphone access is needed for voice features. Please grant permission to continue.',
+            [{ text: 'OK' }]
+          );
+          break;
+        case RESULTS.BLOCKED:
+          console.log('Microphone permission blocked');
+          Alert.alert(
+            'Permission Blocked', 
+            'Microphone access is blocked. Please enable it in your device settings.',
+            [
+              { text: 'Cancel' },
+              { text: 'Open Settings', onPress: () => Linking.openSettings() }
+            ]
+          );
+          break;
+      }
+    } catch (error) {
+      console.error('Error requesting microphone permission:', error);
+    }
+  };
+
   const handleCreateWallet = () => {
     // This function would handle the actual wallet creation
     console.log('Creating wallet...');
+    // Additional wallet creation logic here
   };
 
   return (
@@ -180,8 +229,8 @@ const CreateWalletScreen = () => {
         </View>
         <View className="flex flex-col items-center w-full justify-center">
         <TouchableOpacity
-          className="bg-white py-4 px-8 rounded-lg w-3/4 items-center rounded-full"
-          onPress={handleCreateWallet}
+          className="bg-white py-4 px-8 w-3/4 items-center rounded-full"
+          onPress={requestMicrophonePermission}
         >
           <Text className="text-base font-semibold text-black opacity-50" style={{ 
             fontFamily: 'Fredoka-SemiBold',
@@ -190,7 +239,7 @@ const CreateWalletScreen = () => {
           </Text>
         </TouchableOpacity>
         <TouchableOpacity
-          className="py-4 px-8 rounded-lg w-4/5 items-center rounded-full"
+          className="py-4 px-8 w-4/5 items-center rounded-full"
           onPress={handleCreateWallet}
         >
           <Text className="text-base font-semibold text-white opacity-60" style={{ 
